@@ -37,7 +37,7 @@ export default function Home({ data }: DataProps) {
               </tr>
             </thead>
             <tbody className="text-blue-gray-900">
-              {data.map((post) => (
+              {data?.map((post) => (
                 <tr key={post.id} className="border-b border-blue-gray-200">
                   <td className="py-3 px-4">{post.id}</td>
                   <td className="py-3 px-4">{post.title}</td>
